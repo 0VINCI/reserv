@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b7b7b7e7;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #595353;
+  color: rgb(255, 255, 255);
+  padding: 20px 0;
+  flex-shrink: 0;
+}
+
+h1 {
+  margin: 0;
+  margin-left: -78vw;
+  font-size: 1.8rem;
+}
+
+main.main-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25vw;
+  padding: 20px;
+  transform: scale(1.4);
+}
+
+.car-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  text-align: left;
+  gap: 20px;
+}
+
+.calendar {
+  width: 100%;
+}
+
+.select-box select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.select-box select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+.select-box select:hover {
+  background-color: #f0f8ff;
+}
+
+.reserve-button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reserve-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.reserve-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reserve-button.disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.reserve-button.disabled:hover {
+  transform: none;
+}
+
+.error-text {
+  color: rgb(150, 22, 22);
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+.h3 {
+  color: red;
+}
