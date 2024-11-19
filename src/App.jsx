@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div className="app">
       <header>
-        <h1>System Rezerwacji Auta</h1>
+        <h1>System Rezerwacji Brumka</h1>
       </header>
       <main className="main-container">
         <img src="/brumek.jpeg" alt="Auto" className="car-image" />
@@ -34,7 +34,7 @@ const App = () => {
             <SelectBox setUser={setUser} />
             {isReservationDisabled && (
               <p className="error-text">
-                Ten użytkownik nie może wykonać rezerwacji
+                Mama nie może wykonać rezerwacji brumka
               </p>
             )}
           </div>

@@ -12,8 +12,8 @@ const SelectBox = ({ setUser }) => {
         <option value="" disabled>
           Wybierz...
         </option>
-        <option value="Paweł">Paweł</option>
-        <option value="Michał">Michał</option>
+        <option value="Pawełek">Paweł</option>
+        <option value="Michaś">Michał</option>
         <option value="Mama">Mama</option>
       </select>
     </div>

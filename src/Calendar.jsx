@@ -16,12 +16,12 @@ const Calendar = ({ setStartDate, setEndDate }) => {
     <div className="calendar">
       <h3>Wybierz daty:</h3>
       <DatePicker
-        selected={selectedRange[0]} // Początkowa data
-        onChange={handleDateChange} // Zmiana zakresu dat
-        startDate={selectedRange[0]} // Data początkowa
-        endDate={selectedRange[1]} // Data końcowa
-        selectsRange // Włączenie wyboru zakresu dat
-        inline // Wyświetlenie jako widok kalendarza
+        selected={selectedRange[0]}
+        onChange={handleDateChange}
+        startDate={selectedRange[0]}
+        endDate={selectedRange[1]}
+        selectsRange
+        inline
       />
     </div>
   );
